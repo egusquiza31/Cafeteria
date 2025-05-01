@@ -9,7 +9,7 @@ public class Pedidos {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/cafeteria?useSSL=false", "root", "ajugardota2");
+                "jdbc:mysql://localhost:3306/cafeteria?useSSL=false", "root", "tu_contraseña");
 
             String sql = "INSERT INTO pedidos (cliente, producto, cantidad) VALUES (?, ?, ?)";
             PreparedStatement ps = con.prepareStatement(sql);
